@@ -1,5 +1,6 @@
+# single-page_CV
 https://roadmap.sh/projects/single-page-cv
 
-# single-page_CV
-A challenger to pratice
 
+# Basic-HTML-Website
+https://roadmap.sh/projects/basic-html-website
