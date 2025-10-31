@@ -1,0 +1,174 @@
+:root{
+    --header-line: #e0e0e0
+}
+
+body{
+    padding: 0 3rem;
+    margin: 0;
+}
+
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--header-line);
+}
+
+div.logo{
+    width: 145px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 3rem;
+    border: 1px solid;
+}
+
+/* external font
+h1,h2{
+    font-family: 'Coming Soon', cursive;   
+}
+*/
+
+h1, h2{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+p, a, li, blockquote, label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Content*/
+/*displays*/
+div#main-content, .title, section#comments-field, #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.title h1, .title p{
+    text-align: center;
+    margin: 10px;
+}
+
+.title{
+    height: 150px;;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+section{
+    width: 100%;
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+#articles{  
+    border: 1px solid;
+}
+
+#articles h2, #articles p, #articles ul li, #articles a{
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/*Comments field*/
+
+section#comments-field{
+    text-align: center;
+    margin-bottom: 2rem
+}
+
+.comments{
+    border: 1px solid;
+    width: 50%;
+    margin: 1rem 0;
+}
+
+footer{
+border-top: 1px solid var(--header-line);;
+}
+
+#contact{
+    position: relative;
+    bottom: 40px;
+}
+
+footer p{
+    text-align: center;
+    margin: 3rem;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    
+    body {
+        padding: 0 1rem;
+    }
+    
+    header {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    div.logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr; 
+    }
+    
+    .column {
+        border-right: none !important; 
+        border-bottom: 1px solid var(--header-line);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #articles{
+        border: none;
+        text-align: center;
+    }
+
+    ul{
+        padding-left: 0;
+    }
+    
+    .column.education-column {
+        border-bottom: none;
+    }
+
+    .comments {
+        width: 90%;
+    }
+    
+    footer p {
+        margin: 1rem;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}

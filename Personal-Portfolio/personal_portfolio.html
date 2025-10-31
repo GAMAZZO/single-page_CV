@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tags -->
+    <meta name="description" content="A simple HTML-only website for roadmap.sh frontend">
+    <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh">
+    <meta name="author" content="Me">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=NomeDaFonte&display=swap" rel="stylesheet">
+    <title>Basic HTML Website</title>
+</head>
+
+<body>
+
+    <header id="home">
+        <div class="logo">
+            <img src="robot.png" alt="Terminator image">
+            <p>Your name</p>
+        </div>          
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="articles.html">Articles</a>
+            <a href="contact.html">Contact</a>
+        </nav>      
+    </header>
+    
+    
+    <div id="main-content">     
+        <div class="title">
+            <h1>Frontend Developer</h1>
+            <p>html only with proper layout, no styling</p>
+        </div>
+
+        <main>
+            <section id="articles" class="column projects-column">            
+                <h2>Projects</h2>
+                <li><a href="#">Calculator</a></li>
+                <li><a href="#">HTML Only Portfolio</a></li>
+                <li><a href="#">Quiz App</a></li>
+                <li><a href="#">Countdown Time</a></li>
+                <li><a href="#">Product Upcoming Page</a></li>                              
+            </section>
+
+            <section id="articles" class="column work-column">               
+                <h2>Work Expirience</h2>
+                <p>roadmap.sh</p>
+                <p>Solved all the Frontend projects</p>
+                <a href="#">Visit my Profile</a>
+                
+                <h2>OpenSource Work</h2>
+                <p>roadmap.sh</p>
+                <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHubs Stars</p>
+                <a href="#">Visit my GitHub Profile</a>
+            </section>    
+
+            <section id="articles" class="column education-column">
+                <h2>Education</h2>
+                <p>Graduated with 3.76 out 4 CPGA. Won Acme Hackathon Organized 30 sessions</p>
+                <p>Couses I Took:</p>
+                <ul>
+                    <li>Object Oriented Programming</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Web Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Human Computer Interaction</li>
+                    <li>Computer Graphics</li>
+                    <li>Database Management Systems</li>
+                    <li>Distributed Database Systems</li>
+                    <li>Discreet Mathematics</li>
+                </ul>           
+            </section>
+        </main>
+
+        <section id="comments-field">
+            <h2>Reviews from my Teachers</h2>
+            <div class="comments">
+                <blockquote class="review-text">
+                John doe was a brilliant student; always stood out with his assignments.
+                </blockquote>
+                <p>Jane Doe</p>
+                <p>Assitent Professor</p>
+            </div>
+            <div class="comments">
+                <blockquote class="review-text">
+                John doe was a brilliant student; always stood out with his assignments.
+                </blockquote>
+                <p>Jane Doe</p>
+                <p>Assitent Professor</p>
+            </div>
+            <div class="comments">
+                <blockquote class="review-text">
+                John doe was a brilliant student; always stood out with his assignments.
+                </blockquote>
+                <p>Jane Doe</p>
+                <p>Assitent Professor</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact me</h2>
+            <form action="#" method="post"> 
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="user_email" required>
+
+                <label for="message">Message</label>
+                <textarea name="user_message" id="message"></textarea>
+
+                <button type="submit">Send message</button>
+
+            </form>
+        </section>
+    </div>
+
+    
+    <footer>
+        <p>&copy; All rights reseved 2025</p>
+    </footer>
+</body>
+
+</html>
