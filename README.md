@@ -7,3 +7,6 @@ https://roadmap.sh/projects/basic-html-website
 
 # personal_portfolio
 https://roadmap.sh/projects/portfolio-website
+
+# Changelog-component
+https://roadmap.sh/projects/changelog-component
